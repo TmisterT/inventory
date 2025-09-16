@@ -36,7 +36,41 @@
 
                             <li class="menu-title">Pages</li>
 
-                            <li>
+                             <li>
+                                    <a href="#WareHouse" data-bs-toggle="collapse">
+                                        <i data-feather="users"></i>
+                                        <span> WareHouse Manage </span>
+                                        <span class="menu-arrow"></span>
+                                    </a>
+                                    <div class="collapse" id="WareHouse">
+                                        <ul class="nav-second-level">
+                                    <li>
+                                    <a href="{{ route('all.warehouse') }}" class="tp-link">All WareHouse</a>
+                                </li>   
+                                                
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <li>
+                                        <a href="#Supplier" data-bs-toggle="collapse">
+                                            <i data-feather="users"></i>
+                                            <span> Supplier Manage </span>
+                                            <span class="menu-arrow"></span>
+                                        </a>
+                                        <div class="collapse" id="Supplier">
+                                            <ul class="nav-second-level">
+                                        <li>
+                                        <a href="{{ route('all.supplier') }}" class="tp-link">All Supplier</a>
+                                    </li>   
+                                                    
+                                            </ul>
+                                        </div>
+                                    </li>
+
+
+
+                               <li>
                                 <a href="#sidebarAuth" data-bs-toggle="collapse">
                                     <i data-feather="users"></i>
                                     <span> Brand Manage </span>
@@ -45,7 +79,7 @@
                                 <div class="collapse" id="sidebarAuth">
                                     <ul class="nav-second-level">
                                         <li>
-                                            <a href="{{ route('all.brand') }}" class="tp-link">All Brands</a>
+                                            <a href="{{ route('all.brand') }}" class="tp-link">A Brands</a>
                                         </li>
                                       
                                        
