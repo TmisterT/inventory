@@ -37,7 +37,7 @@
 
     <li class="menu-title">Pages</li>
 
-    @if (Auth::guard('web')->user()->can('brand.menu')) 
+    {{-- @if (Auth::guard('web')->user()->can('brand.menu'))  --}}
     <li>
         <a href="#sidebarAuth" data-bs-toggle="collapse">
             <i data-feather="users"></i>
@@ -46,18 +46,18 @@
         </a>
         <div class="collapse" id="sidebarAuth">
             <ul class="nav-second-level">
-       @if (Auth::guard('web')->user()->can('all.brand'))   
+       {{-- @if (Auth::guard('web')->user()->can('all.brand'))    --}}
       <li>
         <a href="{{ route('all.brand') }}" class="tp-link">All Brand</a>
        </li>
-       @endif   
+       {{-- @endif    --}}
                     
             </ul>
         </div>
     </li>
-     @endif
+     {{-- @endif --}}
 
- @if (Auth::guard('web')->user()->can('warehouse.menu')) 
+ {{-- @if (Auth::guard('web')->user()->can('warehouse.menu'))  --}}
     <li>
         <a href="#WareHouse" data-bs-toggle="collapse">
             <i data-feather="users"></i>
@@ -66,18 +66,18 @@
         </a>
         <div class="collapse" id="WareHouse">
             <ul class="nav-second-level">
-       @if (Auth::guard('web')->user()->can('all.warehouse'))  
+       {{-- @if (Auth::guard('web')->user()->can('all.warehouse'))   --}}
        <li>
         <a href="{{ route('all.warehouse') }}" class="tp-link">All WareHouse</a>
        </li>  
-       @endif 
+       {{-- @endif  --}}
                     
             </ul>
         </div>
     </li>
-      @endif
+      {{-- @endif --}}
 
- @if (Auth::guard('web')->user()->can('supplier.menu')) 
+ {{-- @if (Auth::guard('web')->user()->can('supplier.menu'))  --}}
     <li>
         <a href="#Supplier" data-bs-toggle="collapse">
             <i data-feather="users"></i>
@@ -93,9 +93,9 @@
             </ul>
         </div>
     </li>
-    @endif
+    {{-- @endif --}}
 
-     @if (Auth::guard('web')->user()->can('customer.menu')) 
+     {{-- @if (Auth::guard('web')->user()->can('customer.menu'))  --}}
     <li>
         <a href="#Customer" data-bs-toggle="collapse">
             <i data-feather="users"></i>
@@ -111,7 +111,7 @@
             </ul>
         </div>
     </li>
-    @endif
+    {{-- @endif --}}
 
     <li>
         <a href="#Product" data-bs-toggle="collapse">
